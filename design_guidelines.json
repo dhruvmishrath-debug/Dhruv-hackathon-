@@ -1,0 +1,135 @@
+{
+  "theme": "dark",
+  "archetype": "2 (Performance Pro)",
+  "emotional_tone": "Tactical, Command-center, High-contrast, Urgent, Precise",
+  "domain": "Smart EV Charging Decision Engine",
+  "colors": {
+    "background_base": "#0A0A0A",
+    "background_surface": "#13161C",
+    "background_surface_elevated": "#1A1D24",
+    "text_primary": "#FFFFFF",
+    "text_secondary": "#8A94A6",
+    "primary_action": "#00E5FF",
+    "primary_action_hover": "#00BFFF",
+    "emergency_critical": "#FF3B30",
+    "emergency_critical_bg": "rgba(255, 59, 48, 0.1)",
+    "success_safe": "#00F58D",
+    "warning": "#FF9F0A",
+    "border_subtle": "rgba(255, 255, 255, 0.1)",
+    "border_focus": "#00E5FF"
+  },
+  "typography": {
+    "anti_default_rule": "Inter is strictly BANNED for headings.",
+    "headings": {
+      "family": "Chivo",
+      "style": "Strong Condensed, font-black for numbers, font-light for subheadings",
+      "h1": "text-4xl sm:text-5xl lg:text-6xl tracking-tighter",
+      "h2": "text-2xl sm:text-3xl lg:text-4xl tracking-tight",
+      "h3": "text-xl sm:text-2xl tracking-tight"
+    },
+    "body": {
+      "family": "Manrope",
+      "style": "font-normal leading-relaxed text-base"
+    },
+    "data_numbers": {
+      "family": "JetBrains Mono",
+      "style": "font-bold tracking-tight text-lg"
+    },
+    "labels_overlines": {
+      "family": "JetBrains Mono",
+      "style": "uppercase text-xs tracking-[0.2em] text-[#8A94A6]"
+    }
+  },
+  "layout_and_spacing": {
+    "strategy": "MODE B: THE 'CONTROL ROOM' GRID",
+    "container_gaps": "gap-4 md:gap-6",
+    "internal_padding": "p-6 lg:p-8",
+    "border_radius": "rounded-sm",
+    "general_rules": [
+      "No jagged bottoms. Use h-full on children.",
+      "Containers must use 1px solid stroke with no soft shadows.",
+      "Full pixel utilization. Dense spacing.",
+      "Override default stretch on grid if needed, but here we want items to stretch and fill."
+    ],
+    "grid_structure": {
+      "top_panel": "col-span-12",
+      "center_left_list": "col-span-12 lg:col-span-3",
+      "center_middle_ai_card": "col-span-12 lg:col-span-6",
+      "center_right_details_map": "col-span-12 lg:col-span-3",
+      "bottom_left_time": "col-span-12 lg:col-span-6",
+      "bottom_right_booking": "col-span-12 lg:col-span-6"
+    }
+  },
+  "components": {
+    "buttons": {
+      "primary": "bg-[#00E5FF] text-[#0A0A0A] hover:bg-[#00BFFF] hover:text-[#0A0A0A] font-bold uppercase tracking-wider rounded-sm transition-colors",
+      "emergency": "bg-[#FF3B30] text-[#FFFFFF] hover:bg-[#D63028] hover:text-[#FFFFFF] font-bold uppercase tracking-wider rounded-sm animate-pulse shadow-[0_0_15px_rgba(255,59,48,0.5)] transition-colors",
+      "secondary": "bg-transparent border border-[#00E5FF] text-[#00E5FF] hover:bg-[#00E5FF]/10 rounded-sm transition-colors"
+    },
+    "cards": {
+      "default": "bg-[#13161C] border border-white/10 rounded-sm",
+      "hover_state": "hover:-translate-y-1 hover:border-[#00E5FF]/50 transition-all duration-200",
+      "glass_header": "backdrop-blur-xl bg-[#0A0A0A]/80 border-b border-white/10",
+      "ai_recommendation": "relative overflow-hidden border border-[#00E5FF]/30 shadow-[inset_0_0_20px_rgba(0,229,255,0.1)] rounded-sm"
+    },
+    "forms_inputs": {
+      "strategy": "Shadcn heavily customized",
+      "input_field": "bg-[#1A1D24] border border-white/10 text-white focus:ring-2 focus:ring-[#00E5FF] focus:border-transparent rounded-sm h-12",
+      "label": "text-xs font-mono uppercase tracking-widest text-[#8A94A6] mb-2 block"
+    },
+    "emergency_banner": "If battery < 15%, display a full-width top banner bg-[#FF3B30]/10 border-b border-[#FF3B30] text-[#FF3B30] py-3 flex items-center justify-center font-mono tracking-widest uppercase animate-pulse"
+  },
+  "motion_and_interactions": {
+    "hover": "Explicitly set hover text colors. e.g., hover:bg-white/10 hover:text-white",
+    "focus": "High contrast ring focus:ring-2 focus:ring-[#00E5FF]",
+    "animations": [
+      "Micro-interactions on hover (-translate-y-1).",
+      "Staggered entrance for the station list.",
+      "Progressive disclosure for AI explanation (fade-in)."
+    ],
+    "accessibility": "Respect prefers-reduced-motion. Add aria-hidden to decorative icons."
+  },
+  "media": {
+    "image_urls": {
+      "ai_card_background": {
+        "url": "https://images.pexels.com/photos/27141313/pexels-photo-27141313.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "description": "High-tech digital interface background. Use with a heavy black overlay (bg-black/70) so text is highly readable.",
+        "category": "backgrounds"
+      },
+      "station_thumbnail_1": {
+        "url": "https://images.unsplash.com/photo-1743993412497-c77a5cfc0019?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1Mjh8MHwxfHNlYXJjaHwyfHxlbGVjdHJpYyUyMHZlaGljbGUlMjBjaGFyZ2luZyUyMHN0YXRpb24lMjBkYXJrfGVufDB8fHx8MTc3Njg0MTE3NHww&ixlib=rb-4.1.0&q=85",
+        "description": "Tesla charging at night.",
+        "category": "thumbnails"
+      },
+      "station_thumbnail_2": {
+        "url": "https://images.pexels.com/photos/12860663/pexels-photo-12860663.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "description": "Row of Tesla charging stations illuminated at night.",
+        "category": "thumbnails"
+      },
+      "station_thumbnail_3": {
+        "url": "https://images.unsplash.com/photo-1670701951026-f83b1bcf6561?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1Mjh8MHwxfHNlYXJjaHwxfHxlbGVjdHJpYyUyMHZlaGljbGUlMjBjaGFyZ2luZyUyMHN0YXRpb24lMjBkYXJrfGVufDB8fHx8MTc3Njg0MTE3NHww&ixlib=rb-4.1.0&q=85",
+        "description": "Machines next to each other.",
+        "category": "thumbnails"
+      }
+    },
+    "map": {
+      "strategy": "Use React Leaflet with a dark map tile provider (e.g., CartoDB.DarkMatter: 'https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png'). Container should have sharp borders (rounded-sm) and border-white/10."
+    }
+  },
+  "technical_requirements": {
+    "icons": "yarn add @phosphor-icons/react",
+    "map_library": "yarn add react-leaflet leaflet",
+    "testing": "All interactive and key informational elements MUST include a data-testid attribute in kebab-case format indicating role (e.g., data-testid=\"booking-submit-btn\").",
+    "component_imports": "Use standard Shadcn UI components but heavily override their classes to remove soft shadows and rounded-xl corners. Convert them to flat, 1px border, rounded-sm."
+  },
+  "instructions_to_main_agent": [
+    "Implement a deep dark theme using the Performance Pro archetype. The background must be #0A0A0A.",
+    "Do not use generic blue 'SaaS' colors. Stick to the provided neon/volt blue (#00E5FF) for active states and red (#FF3B30) for emergency states.",
+    "The layout must feel like a tactical command center: tight gaps (gap-4 or gap-6), dense data representation using JetBrains Mono, and sharp, 1px bordered containers.",
+    "Embed the 'ai_card_background' image into the Center BIG CARD with a bg-black/70 overlay to ensure text contrast. This card should feel like the glowing 'brain' of the dashboard.",
+    "Implement the Leaflet map with dark tiles and ensure the map container matches the UI's border styling.",
+    "When battery drops below 15%, the UI must shift its accent colors to red and show a pulsing emergency banner.",
+    "Ensure all fonts (Chivo, JetBrains Mono, Manrope) are imported and applied correctly according to the typography section.",
+    "Do not forget to add data-testid attributes to all interactive elements."
+  ]
+}
