@@ -117,7 +117,7 @@ export const RecommendationCard = ({ best, explanation, explanationLoading, emer
             <Compass size={18} weight="fill" /> Navigate
           </button>
           <button
-            data-testid="book-btn"
+            data-testid="book-slot-btn"
             onClick={onBook}
             className="flex-1 bg-transparent border border-[#00E5FF] text-[#00E5FF] hover:bg-[#00E5FF]/10 font-bold uppercase tracking-wider rounded-sm h-12 flex items-center justify-center gap-2 transition-colors"
           >

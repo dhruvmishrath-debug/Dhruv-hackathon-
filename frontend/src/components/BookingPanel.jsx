@@ -157,7 +157,7 @@ export const BookingPanel = ({ station, batteryLevel, requiredCharge, booking, s
               Expected Arrival
             </Label>
             <Input
-              data-testid="booking-arrival-input"
+              data-testid="booking-time-input"
               type="time"
               value={form.expected_arrival}
               onChange={(e) => setForm({ ...form, expected_arrival: e.target.value })}
